@@ -1,0 +1,28 @@
+ipeline { 
+  
+   agent any
+
+   stages {
+   
+     stage('Install Dependencies') { 
+        steps { 
+           sh 'npm install' 
+        }
+     }
+     
+     stage('Tt') { 
+        steps { 
+           sh 'echo "testing application..."'
+        }
+      }
+
+         stage("Deploy ") { 
+         steps { 
+           sh 'echo "deploying..."'
+         }
+
+     }
+  
+   	}
+
+   }
